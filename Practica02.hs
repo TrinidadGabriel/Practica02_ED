@@ -1,3 +1,5 @@
+---Listas y recursion---
+
 ----1. Longitud de una lista----
 longitud :: [a] -> Int
 longitud [] = 0
@@ -18,3 +20,14 @@ maximoLista :: (Num a, Ord a) => [a] -> a
 maximoLista [] = error "La lista no puede estar vacia"
 maximoLista [x] = x
 maximoLista (x:xs) = max x (maximoLista xs)
+
+----5. Recuperar un elemento de una lista de acuerdo a su índice----
+.
+.
+.
+
+---Listas por comprehensi ́on y recursi ́on de cola.---
+
+----1. Divisores de un n ́umero entero.----
+
+----2. Convertir una lista en conjunto----
