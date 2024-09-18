@@ -1,3 +1,8 @@
+--- Ejercicios ---
+-- INTEGRANTES DE EQUIPO:
+-- Trinidad Camacho Gabriel
+-- Vazquez Serralta Alan
+
 --------------- Listas y recursión ---------------
 
 --Longitud de una lista--
