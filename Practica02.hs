@@ -34,8 +34,10 @@ indice (x:xs) y = if y < 0 || y >= longitud (x:xs)
 
 --------------- Listas por comprehensión ---------------
 
+--Divisores de un número entero--
 divisores :: Int -> [Int]
-divisores _ = undefined
+divisores 0 = []
+divisores n = [x | x <- [1..n], mod n x == 0]
 
 conjunto :: Eq a => [a] -> [a]
 conjunto _ = undefined
