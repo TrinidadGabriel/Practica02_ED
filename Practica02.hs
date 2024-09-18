@@ -39,8 +39,10 @@ divisores :: Int -> [Int]
 divisores 0 = []
 divisores n = [x | x <- [1..n], mod n x == 0]
 
+--Convertir una lista en conjunto--
 conjunto :: Eq a => [a] -> [a]
-conjunto _ = undefined
+conjunto [] = []
+conjunto (x:xs) = x : conjunto [y | y <- xs , y /= x]
 
 --Obtener los numeros de pares de una lista--
 numerosPares :: [Int] -> [Int]
