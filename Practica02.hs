@@ -12,10 +12,9 @@ sumaLista (x:xs) = x + sumaLista xs
 
 ---Agregar un elemento a una lista---
 agregaElemento :: [a] -> a -> Bool -> [a]
-agregaElemento [] a booleano = a : []
-agregaElemento (x:xs) a booleano = if booleano 
-                    then a : (x:xs)
-                    else (x:xs) ++ [a]
+agregaElemento lista a booleano = if booleano 
+                    then a : lista
+                    else lista ++ lista
 
 ---Maximo de una lista---
 maximoLista :: (Num a, Ord a) => [a] -> a
@@ -47,6 +46,5 @@ conjunto (x:xs) = x : conjunto [y | y <- xs, y /= x]
 
 ---Obtener los numeros de pares de una lista---
 numerosPares :: [Int] -> [Int]
-numerosPares [] = []
-numerosPares (x:xs) = [n | n <- x:xs, mod n 2 == 0] 
+numerosPares lista = [n | n <- lista, mod n 2 == 0] 
         
